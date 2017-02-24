@@ -1,4 +1,4 @@
-<aura:component controller="SuggestionController" implements="flexipage:availableForAllPageTypes">
+<aura:component controller="SuggestionController" implements="force:appHostable,flexipage:availableForAllPageTypes">
 
    <aura:attribute name="suggestions" type="Suggestion__c[]"/>
 

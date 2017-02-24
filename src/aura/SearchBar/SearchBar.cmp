@@ -1,4 +1,4 @@
-<aura:component implements="flexipage:availableForAllPageTypes" >
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" >
    <aura:registerEvent name="SKChange" type="c:SKChange"/>
    <div class="slds-form-element">
       <div class="slds-form-element__control">

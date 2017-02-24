@@ -23,6 +23,7 @@
 		<members>SearchBar</members>
 		<members>SuggestionList</members>
 		<members>SuggestionDetails</members>
+		<members>SuggestionBoxMaster</members>
 		<name>AuraDefinitionBundle</name>
 	</types>
 	<version>34.0</version>
