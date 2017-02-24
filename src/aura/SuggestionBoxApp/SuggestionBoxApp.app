@@ -15,12 +15,12 @@
                        <c:SearchBar />
                     </div>
                 </div>
-                <div class="slds-grid slds-grid--pull-padded">
+                <div class="slds-grid slds-wrap slds-grid--pull-padded">
                     <div class="slds-col slds-p-horizontal--small">
                        <c:SuggestionList />
                     </div>
                     <div class="slds-col slds-p-horizontal--small">
-                       <c:SuggestionDetails /> 
+                       <c:SuggestionDetails />
                     </div>
                 </div>
             </div>
