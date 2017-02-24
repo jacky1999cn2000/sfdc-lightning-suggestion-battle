@@ -1,0 +1,37 @@
+<aura:component controller="SuggestionController" implements="flexipage:availableForAllPageTypes">
+   <aura:attribute name="suggestions" type="Suggestion__c[]" />
+   <aura:attribute name="newSuggestion" type="Suggestion__c"
+      default="{ 'sobjectType': 'Suggestion__c',
+      'Name': '',
+      'Status__c': '',
+      'Suggestion_Category__c': '',
+      'Suggestion_Description__c': ''
+      }"></aura:attribute>
+
+   <div class="container">
+      <h1>
+         Add Suggestions
+      </h1>
+      <div class="button-container">
+         <ui:button aura:id="addbutton" label="New" labelClass="assistiveText" class="myButton" press="{!c.addNew}" />
+      </div>
+   </div>
+
+   <!-- Input Form using components -->
+   <div aura:id="formbox" class="myboxhidden">
+      <form>
+         <fieldset>
+            <ui:inputText aura:id="sugname" class="form-control slds-m-bottom--medium" value="{!v.newSuggestion.Name}" placeholder="Suggestion Name" required="true"/>
+            <ui:inputSelect aura:id="category" class="form-control slds-m-bottom--medium" value="{!v.newSuggestion.Suggestion_Category__c}" required="true" >
+               <ui:inputSelectOption class="select-option" text="Customer Service" value="Customer Service"/>
+               <ui:inputSelectOption class="select-option" text="Employee Services" value="Employee Services"/>
+               <ui:inputSelectOption class="select-option" text="Facilities/ IT" value="Facilities/ IT" />
+               <ui:inputSelectOption class="select-option" text="Kitchen Snacks" value="Implemented"/>
+               <ui:inputSelectOption class="select-option" text="Others" value="Implemented"/>
+            </ui:inputSelect>
+            <ui:inputText aura:id="description" class="form-control slds-m-bottom--medium" value="{!v.newSuggestion.Suggestion_Description__c}" placeholder="Suggestion Description" />
+            <ui:button label="Submit" press="{!c.createSuggestion}" />
+         </fieldset>
+      </form>
+   </div>
+</aura:component>

@@ -1,0 +1,8 @@
+<aura:component implements="flexipage:availableForAllPageTypes" >
+   <aura:registerEvent name="SKChange" type="c:SKChange"/>
+   <div class="slds-form-element">
+      <div class="slds-form-element__control">
+         <input id="text-input-01" class="slds-input textfont" type="text" onkeypress="{!c.searchKeyChange}" placeholder="Search for Suggestions" />
+      </div>
+   </div>
+</aura:component>
