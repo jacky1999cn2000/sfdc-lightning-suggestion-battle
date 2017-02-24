@@ -5,6 +5,12 @@
 
 * [how to deploy to sf1](http://reidcarlberg.github.io/lightning-newbie/hello-salesforce1.html)
   * create a master component `SuggestionBoxMaster` to house all the other components
+    * P.S. so in the lighting app will only have this master component
+    ```
+    <aura:application extends="force:slds">
+        <c:SuggestionBoxMaster />
+    </aura:application>
+    ```
   * add `force:appHostable` to this master component (probably not necessary to add `force:appHostable` to other blocking components)
   * create a lightning tab for this master component (we can only surface lightning tab to sf1, and lightning tab can only be created for lighting component, not lighting app)
   ![tab1.png](/imgs/tab1.png)
