@@ -24,8 +24,8 @@
 * [how to deploy to lighting experience](http://reidcarlberg.github.io/lightning-newbie/hello-salesforce1.html)
   * sure, without deployment, we can still access the app via `https://lz-suggestion-battle-dev-ed.lightning.force.com/c/SuggestionBoxApp.app`, and there are some other ways to launch it (https://success.salesforce.com/answers?id=90630000000DBzIAAW)
   * let's deploy it via `App Manager` (Setup - Apps - App Manager)
-    * add `flexipage:availableForAllPageTypes` to this master component
-    * follow the wizards and select the lighting tab created above in `Select Items` step
+    * add `flexipage:availableForAllPageTypes` to this master component (this step probably not necessary for this deployment, it only decide whether this component is available for `Lightning App Builder`, and here we use lighting tab to create the Lighting App - see the step below)
+    * follow the wizards and in `Select Items` step, select the lighting tab created in `how to deploy to sf1`
     ![lg1.png](/imgs/lg1.png)
     ![lg2.png](/imgs/lg2.png)
     ![lg3.png](/imgs/lg3.png)
